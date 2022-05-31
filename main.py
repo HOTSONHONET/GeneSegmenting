@@ -105,8 +105,10 @@ class Shatz:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--gb_dir_path", type=str, required=True)
-    parser.add_argument("--txt_dir_path", type=str, required=True)
+    parser.add_argument("--gb_dir_path", type=str, required=True,
+                        help="path to the directory containing the .gb formatted files")
+    parser.add_argument("--txt_dir_path", type=str, required=True,
+                        help="path to the directory containing the .txt formatted files")
     parser.add_argument("--name", type=str,
                         default=f"shatz_results")
 
